@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+$Red: hsl(0,
+100%,
+74%);
+$Green: hsl(154,
+59%,
+51%);
+$Blue: hsl(248,
+32%,
+49%);
+$Dark-Blue: hsl(249,
+10%,
+26%);
+$Grayish-Blue: hsl(246,
+25%,
+77%);
+@mixin placeholder {
+     ::-webkit-input-placeholder {
+        @content
+    }
+     :-moz-placeholder {
+        @content
+    }
+     ::-moz-placeholder {
+        @content
+    }
+     :-ms-input-placeholder {
+        @content
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/images/bg-intro-mobile.png');
+    background-color: $Red;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    margin: auto 20px;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    .left {
+        color: white;
+        h1 {
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+    .right {
+        .free {
+            background-color: $Blue;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 0 0 rgb(209, 100, 100);
+            p {
+                color: $Grayish-Blue;
+                padding: 10px;
+                font-size: 15px;
+                span {
+                    font-weight: 700;
+                    color: white;
+                }
+            }
+        }
+        .form-body {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 0 0 rgb(199, 95, 95);
+            position: relative;
+            #fname {
+                position: absolute;
+                right: 40px;
+                top: 25px;
+                display: none;
+            }
+            #lname {
+                position: absolute;
+                right: 40px;
+                top: 92px;
+                display: none;
+            }
+            #email {
+                position: absolute;
+                right: 40px;
+                top: 159px;
+                display: none;
+            }
+            #pass {
+                position: absolute;
+                right: 40px;
+                top: 226px;
+                display: none;
+            }
+            input {
+                width: 90%;
+                height: 50px;
+                font-size: 16px;
+                border-radius: 5px;
+                padding-left: 10px;
+                margin: 15px 15px 0 15px;
+                border: 1px solid lightgray;
+            }
+            input:focus {
+                outline: none !important;
+                border: 1px solid blue;
+                font-family: 'Poppins', sans-serif;
+            }
+            @include placeholder {
+                color: gray;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+            button {
+                background-color: $Green;
+                border: none;
+                outline: none;
+                width: 90%;
+                height: 50px;
+                margin: 15px 0;
+                color: white;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                box-shadow: 0 3px 1px 1px rgb(48, 170, 117);
+            }
+            .terms {
+                padding: 5px 30px 30px 30px;
+                font-size: 12px;
+                font-weight: 500;
+                color: $Grayish-Blue;
+                span {
+                    color: $Red;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.error {
+    #emailimg {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 785px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 0 35px 0 20%;
+        h1 {
+            margin: 0;
+            text-align: left;
+            font-size: 45px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .right {
+        padding: 0 20% 0 35px;
+    }
+}
