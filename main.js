@@ -11,6 +11,7 @@ form.addEventListener('submit', (e) => {
     let emailValue = email.value;
     if (validateEmail(emailValue)) {
         form.classList.remove('error')
+        console.log('test');
     } else {
         form.classList.add('error')
     }
