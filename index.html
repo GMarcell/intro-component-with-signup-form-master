@@ -42,15 +42,21 @@
                 </div>
                 <div class="form-body">
                     <form action="#">
-                        <input type="text" placeholder="First Name">
-                        <img id="fname" src="/images/icon-error.svg" alt="icon-error">
-                        <input type="text" placeholder="Last Name">
-                        <img id="lname" src="/images/icon-error.svg" alt="icon-error">
-                        <input type="email" placeholder="Email Address">
-                        <img id="email" src="/images/icon-error.svg" alt="icon-error">
-                        <input type="password" placeholder="Password">
-                        <img id="pass" src="/images/icon-error.svg" alt="icon-error">
-                        <button type="submit" value="submit">Claim your free trial </button>
+                        <input type="text" placeholder="First Name" name="fname" id="fnameinp">
+                        <img class="error-icon" id="fname" src="/images/icon-error.svg" alt="icon-error">
+                        <p class="error-text" id="fnametxt">First Name cannot be empty</p>
+                        <input type="text" placeholder="Last Name" name="lname" id="lnameinp">
+                        <img class="error-icon" id="lname" src="/images/icon-error.svg" alt="icon-error">
+                        <p class="error-text" id="lnametxt">Last Name cannot be empty</p>
+                        <input type="email" placeholder="Email Address" name="email" id="emailinp">
+                        <img class="error-icon" id="email" src="/images/icon-error.svg" alt="icon-error">
+                        <p class="error-text" id="emailtxt">Looks like this is not an email</p>
+                        <input type="password" placeholder="Password" name="pass" id="passinp">
+                        <img class="error-icon" id="pass" src="/images/icon-error.svg" alt="icon-error">
+                        <p class="error-text" id="passtxt">Password cannot be empty</p>
+                        <button type="submit">
+                            Claim your free trial
+                        </button>
                     </form>
                     <p class="terms">
                         By clicking the button, you are agreeing to our

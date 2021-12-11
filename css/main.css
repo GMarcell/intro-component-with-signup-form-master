@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,210 +7,206 @@
 }
 
 body {
-  background-image: url("/images/bg-intro-mobile.png");
-  background-color: #ff7a7a;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
 }
 
-main {
-  height: 100vh;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+header {
+  height: auto;
+  padding: 30px;
+}
+
+header img {
+  width: 150px;
 }
 
 .container {
-  margin: auto 20px;
-  padding: 40px 0;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(135deg, white, #fff5f5);
 }
 
 .container .left {
-  color: white;
+  width: 100%;
+  height: auto;
+  padding: 50px 30px 0;
 }
 
 .container .left h1 {
-  padding-bottom: 20px;
+  font-size: 3.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #ce9797;
+  line-height: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.container .left h1 span {
+  color: #413a3a;
+  font-weight: 300;
 }
 
 .container .left p {
-  font-size: 16px;
-  padding: 5px;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ce9797;
+  line-height: 1.5 rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.container .right .free {
-  background-color: #6055a5;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 6px 0 0 #d16464;
-          box-shadow: 0 6px 0 0 #d16464;
-}
-
-.container .right .free p {
-  color: #b9b6d3;
-  padding: 10px;
-  font-size: 15px;
-}
-
-.container .right .free p span {
-  font-weight: 700;
-  color: white;
-}
-
-.container .right .form-body {
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 5px 0 0 #c75f5f;
-          box-shadow: 0 5px 0 0 #c75f5f;
-  position: relative;
-}
-
-.container .right .form-body #fname {
-  position: absolute;
-  right: 40px;
-  top: 25px;
-  display: none;
-}
-
-.container .right .form-body #lname {
-  position: absolute;
-  right: 40px;
-  top: 92px;
-  display: none;
-}
-
-.container .right .form-body #email {
-  position: absolute;
-  right: 40px;
-  top: 159px;
-  display: none;
-}
-
-.container .right .form-body #pass {
-  position: absolute;
-  right: 40px;
-  top: 226px;
-  display: none;
-}
-
-.container .right .form-body input {
-  width: 90%;
-  height: 50px;
-  font-size: 16px;
-  border-radius: 5px;
-  padding-left: 10px;
-  margin: 15px 15px 0 15px;
-  border: 1px solid lightgray;
-}
-
-.container .right .form-body input:focus {
-  outline: none !important;
-  border: 1px solid blue;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container .right .form-body ::-webkit-input-placeholder {
-  color: gray;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.container .right .form-body :-moz-placeholder {
-  color: gray;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.container .right .form-body ::-moz-placeholder {
-  color: gray;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.container .right .form-body :-ms-input-placeholder {
-  color: gray;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.container .right .form-body button {
-  background-color: #38cc8c;
-  border: none;
-  outline: none;
-  width: 90%;
-  height: 50px;
-  margin: 15px 0;
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 3px 1px 1px #30aa75;
-          box-shadow: 0 3px 1px 1px #30aa75;
-}
-
-.container .right .form-body .terms {
-  padding: 5px 30px 30px 30px;
-  font-size: 12px;
-  font-weight: 500;
-  color: #b9b6d3;
-}
-
-.container .right .form-body .terms span {
-  color: #ff7a7a;
-  font-weight: 700;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
+.container .right {
   width: 100%;
+  height: 300px;
+  background-image: url("/images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
-.error #email {
+.container form {
+  position: relative;
   display: block;
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 785px) {
+.container form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  border: 1px solid #ce9797;
+  padding-left: 30px;
+  font-family: 'Josefin Sans' sans-serif;
+  font-size: 1.1rem;
+}
+
+.container form input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #debaba;
+}
+
+.container form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #debaba;
+}
+
+.container form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #debaba;
+}
+
+.container form input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #debaba;
+}
+
+.container form button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0 0 18px 1px rgba(206, 151, 151, 0.466);
+          box-shadow: 0 0 18px 1px rgba(206, 151, 151, 0.466);
+}
+
+.container form button:hover {
+  background-image: linear-gradient(135deg, white, #fff5f5);
+  -webkit-box-shadow: 0 0 13px 2px #f4aaabbf;
+          box-shadow: 0 0 13px 2px #f4aaabbf;
+}
+
+.container form .error-icon {
+  position: absolute;
+  top: 24%;
+  right: 85px;
+  display: none;
+}
+
+.container form .error-text {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  font-size: 1rem;
+  display: none;
+}
+
+.error .error-icon {
+  display: block !important;
+}
+
+.error .error-text {
+  display: block !important;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    padding-left: 10%;
+  }
+  header img {
+    width: 180px;
+  }
   .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-  .left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .container .right {
+    width: 80%;
+    height: 100vh;
+    background-image: url("/images/hero-desktop.jpg");
+  }
+  .container .left {
+    height: 100vh;
+    padding-top: 28vh;
     text-align: left;
-    padding: 0 35px 0 20%;
+    padding-left: 10%;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
   }
-  .left h1 {
-    margin: 0;
-    text-align: left;
-    font-size: 45px;
+  .container .left h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
-  .left p {
-    font-size: 16px;
+  .container .left p {
+    margin-left: 0;
+    font-size: 1.1rem;
   }
-  .right {
-    padding: 0 20% 0 35px;
+  .container form {
+    margin-left: 0;
+  }
+  .container form button {
+    width: 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */

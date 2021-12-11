@@ -85,28 +85,43 @@ main {
             border-radius: 10px;
             box-shadow: 0 5px 0 0 rgb(199, 95, 95);
             position: relative;
-            #fname {
+            .error-icon {
                 position: absolute;
                 right: 40px;
-                top: 25px;
+            }
+            #fname {
+                top: 27px;
                 display: none;
             }
             #lname {
-                position: absolute;
-                right: 40px;
-                top: 92px;
+                top: 109px;
                 display: none;
             }
             #email {
-                position: absolute;
-                right: 40px;
-                top: 159px;
+                top: 190px;
                 display: none;
             }
             #pass {
-                position: absolute;
-                right: 40px;
-                top: 226px;
+                top: 271px;
+                display: none;
+            }
+            .error-text {
+                color: $Red;
+                text-align: right;
+                padding-right: 20px;
+                font-size: 10px;
+                font-style: italic;
+            }
+            #fnametxt {
+                display: none;
+            }
+            #lnametxt {
+                display: none;
+            }
+            #emailtxt {
+                display: none;
+            }
+            #passtxt {
                 display: none;
             }
             input {
@@ -142,6 +157,7 @@ main {
                 font-weight: 500;
                 border-radius: 5px;
                 box-shadow: 0 3px 1px 1px rgb(48, 170, 117);
+                cursor: pointer;
             }
             .terms {
                 padding: 5px 30px 30px 30px;
@@ -163,9 +179,51 @@ footer {
     width: 100%;
 }
 
-.error {
+.error-email {
     #email {
-        display: block;
+        display: block !important;
+    }
+    #emailinp {
+        border: 1px solid $Red !important;
+    }
+    #fnametxt {
+        display: block !important;
+    }
+}
+
+.error-pass {
+    #pass {
+        display: block !important;
+    }
+    #passinp {
+        border: 1px solid $Red !important;
+    }
+    #lnametxt {
+        display: block !important;
+    }
+}
+
+.error-fname {
+    #fname {
+        display: block !important;
+    }
+    #fnameinp {
+        border: 1px solid $Red !important;
+    }
+    #emailtxt {
+        display: block !important;
+    }
+}
+
+.error-lname {
+    #lname {
+        display: block !important;
+    }
+    #lnameinp {
+        border: 1px solid $Red !important;
+    }
+    #passtxt {
+        display: block !important;
     }
 }
 
